@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="gallery.css">
+	<script src = "gallery.js"></script>
+	<link href="lightbox2-2.11.5/dist/css/lightbox.css" rel="stylesheet">
+</head>
+
+<body onload="setImages()">
+
+	<div id="image">
+		Hover over an image below to display here.
+	</div>
+<div class="flex">
+
+<a href="image/Grijs.png" data-lightbox="imageset" data-title="Grey">
+  <img class="preview" src="image/Grijs.png" alt="Grey" onmouseover="upDate(this)" onmouseout="unDo()"
+  onfocus="upDate(this)" onblur="unDo()">
+  </a>
+
+<a href="image/groen.png" data-lightbox="imageset" data-title="Green">
+  <img class="preview" src="image/Groen.png" alt="green" onmouseover="upDate(this)" onmouseout="unDo()"
+  onfocus="upDate(this)" onblur="unDo()">
+  </a>
+
+<a href="image/groen03.png" data-lightbox="imageset" data-title="Dark green">
+  <img class="preview" src="image/Groen03.png" alt="dark green" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+</a>
+
+<a href="image/Oranje01.png" data-lightbox="imageset" data-title="Orange">
+  <img class="preview" src="image/Oranje01.png" alt="Orange" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+</a>
+
+<a href="image/Paars01.png" data-lightbox="imageset" data-title="Purple">
+  <img class="preview" src="image/Paars01.png" alt="Purple" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+</a>
+
+<a href="image/Roze.png" data-lightbox="imageset" data-title="Pink">
+  <img class="preview" src="image/Roze.png" alt="Pink" onmouseover="upDate(this)" onmouseout="unDo()"
+  onfocus="upDate(this)" onblur="unDo()">
+</a>
+</div>
+
+<script>
+console.log("Hello Fellow Coursera Student!");
+
+document.querySelectorAll('img.preview').forEach(img => {
+  console.log('src:', img.src);
+  console.log('alt:', img.alt);
+})
+</script>
+<script src="lightbox2-2.11.5/dist/js/lightbox.js"></script>
+<script src=lightbox2-2.11.5/dist/js/lightbox-plus-jquery.js></script>
+</body>
+</html>
